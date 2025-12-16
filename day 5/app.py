@@ -63,6 +63,7 @@ with col1:
     total_revenue = filtered_df[filtered_df['status'] == 'Delivered']['amount'].sum()
     st.metric("Total Revenue", f"₹{total_revenue:,.0f}")
 with col2:
+    
     total_orders = len(filtered_df)
     st.metric("Total Orders", total_orders)
 with col3:
